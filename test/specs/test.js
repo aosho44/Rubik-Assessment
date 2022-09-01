@@ -3,4 +3,9 @@ describe('Finds highest rating course on Udemy website', () => {
 		await browser.url('https://www.google.com/');
 		await expect(browser).toHaveUrl('https://www.google.com/');
 	});
+
+	it('accepts the cookie', async () => {
+		const acceptCookie = await $('#L2AGLb');
+		await acceptCookie.click();
+	});
 });
