@@ -8,4 +8,11 @@ describe('Finds highest rating course on Udemy website', () => {
 		const acceptCookie = await $('#L2AGLb');
 		await acceptCookie.click();
 	});
+
+	it('searches the keyword (Test Automation Learning)', async () => {
+		const search = $('input');
+		await search.click();
+		await search.addValue('Test Automation Learning');
+		await browser.keys('\uE007');
+	});
 });
