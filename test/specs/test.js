@@ -18,4 +18,28 @@ describe('Finds highest rating course on Udemy website', () => {
 		await browser.keys('\uE007');
 		await expect(search).toHaveValue('Test Automation Learning');
 	});
+
+	it('clicks on the Udemy course link', async () => {
+		const websiteName = await $('*=Udemy');
+		await websiteName.click();
+		await expect(websiteName).toHaveUrlContaining('udemy');
+	});
+
+	it('search for BDD with Cucumber in the Udemy site', async () => {
+		const uSearch = await $('input[name="q"]');
+		const check = $('h1');
+		await uSearch.click();
+		await uSearch.addValue('BDD with Cucumber');
+		await browser.keys('\uE007');
+		await expect(browser).toHaveUrlContaining('Cucumber');
+	});
+
+	it('selects the highest rated option in the drop down menu', async () => {
+		const dropDown = await $('select');
+		await dropDown.selectByVisibleText('Highest Rated');
+		await expect(browser).toHaveUrlContaining('highest');
+	});
+
+	// Website broke on me and I am unable to complete it
+	it('selects the highest rated con');
 });
