@@ -40,6 +40,6 @@ describe('Finds highest rating course on Udemy website', () => {
 		await expect(browser).toHaveUrlContaining('highest');
 	});
 
-	// Website broke on me and I am unable to complete it
+	// Website broke down on me and I am unable to complete it
 	it('selects the highest rated con');
 });
