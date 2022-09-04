@@ -40,6 +40,11 @@ describe('Finds highest rating course on Udemy website', () => {
 		await expect(browser).toHaveUrlContaining('highest');
 	});
 
-	// Website broke down on me and I am unable to complete it
+	// Website broke down on me multiple times and I am unable to complete it
+	/*
+	Issues I encountered were the input box was not working
+	Captcha kept intervening sometimes when I run the page.
+	I had few lucks but because of how quick the test was, I did not get a better look as to what was really happening
+	*/
 	it('selects the highest rated con');
 });
