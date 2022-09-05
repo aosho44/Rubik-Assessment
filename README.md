@@ -9,9 +9,13 @@ We were given a set of task that had to be automated using WebdriverIO or Seleni
 > Go to google site
 > 
 > Search for the keyword 'Test Automation Learning'
+> 
 > Select the link with Udemy course
+> 
 > Verify if the Udemy site has opened
+> 
 > Search for BDD with Cucumber
+> 
 > Click on the course with highest rating from the list of search results
 
 ### Issues
