@@ -7,6 +7,7 @@ We were given a set of task that had to be automated using WebdriverIO or Seleni
 ### Scenario:
 
 > Go to google site
+> 
 > Search for the keyword 'Test Automation Learning'
 > Select the link with Udemy course
 > Verify if the Udemy site has opened
